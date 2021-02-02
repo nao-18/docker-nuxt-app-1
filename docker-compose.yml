@@ -1,0 +1,16 @@
+version: "3"
+services:
+  nuxt:
+    build:
+      context: .
+      dockerfile: ./docker/nuxt/Dockerfile
+    tty: true
+    ports:
+    - "3000:3000"
+    working_dir: "/usr/local/src"
+    volumes:
+    - "./front:/usr/local/src"
+    - node_modules_volume:/usr/local/src/node_modules
+
+volumes:
+  node_modules_volume:
