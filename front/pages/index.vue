@@ -3,6 +3,9 @@
     <p>{{ message }}</p>
     <hr>
     <router-link to="/price">Price Page</router-link>
+    <div>
+      <img src="~/assets/cat.jpg" alt="">
+    </div>
   </section>
 </template>
 
