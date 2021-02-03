@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <p>{{ message }}</p>
+    <p class="title">{{ message }}</p>
     <hr>
     <router-link to="/price">Price Page</router-link>
   </section>
@@ -15,3 +15,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.title {
+  font-family: 'Permanent Marker', cursive;
+}
+</style>
