@@ -3,7 +3,9 @@
     <p>{{ $store.state.message }}</p>
 <!--  コミットメソッドでミューテーションを呼び出す  -->
 <!--    <button v-on:click="$store.commit('updateMessage')">Update</button>-->
-    <button v-on:click="$store.commit('updateMessage', 'Commit with payload')">Update</button>
+<!--    <button v-on:click="$store.commit('updateMessage', 'Commit with payload')">Update</button>-->
+<!--    <button v-on:click="$store.dispatch('updateMessageAction')">Dispatch</button>-->
+    <button v-on:click="$store.dispatch('updateMessageAction', 'Dispatch with payload.')">Dispatch</button>
   </section>
 </template>
 
